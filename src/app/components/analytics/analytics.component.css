@@ -1,0 +1,62 @@
+/*Analytics start*/
+#container-analysis {
+    position: relative;
+    background-image: url("../../../assets/img/bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
+  
+  #row-analysis {
+    width: 85vw;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-around;
+    margin: auto;
+    padding: 3rem 0;
+  }
+  @media (max-width: 768px) {
+    #row-analysis {
+      width: 95vw;
+    }
+  }
+  
+  #asset {
+    position: relative;
+    height: 30vh;
+    min-width: 10rem;
+  }
+  
+  .asset-img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .asset-text > h2 {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .asset-text > h5 {
+    color: #023964;
+    text-align: center;
+    font-weight: bolder;
+  }
+  
+  #img-asset {
+    border-radius: 50%;
+    transition: 0.1s;
+  }
+  
+  #img-asset:hover {
+    border: #dbb612 solid 3px;
+  }
+  
+  /*Analytics end*/

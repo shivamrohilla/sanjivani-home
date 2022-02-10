@@ -1,0 +1,70 @@
+/* partner starts */
+#partners-tab {
+    position: relative;
+    width: 100%;
+    background-image: url("../../../assets/img/tax-benifits.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  .partners-bg {
+    position: relative;
+    width: 70vw;
+    height: 30vh;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    background: transparent;
+  }
+  
+  .partners-bg::-webkit-scrollbar {
+    display: none;
+  }
+  
+  #partners-tab > p {
+    color: black;
+  }
+  
+  #partners-tab > h2 {
+    color: black;
+  }
+  
+  .partners-content {
+    position: relative;
+    display: flex;
+    background: transparent;
+  }
+  
+  .partners-content > img {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .partner-nav {
+    position: absolute;
+    z-index: 1;
+    top: 25vh;
+    background-color: transparent;
+    color: aliceblue;
+    width: 20px;
+    height: 20px;
+    font-size: 50px;
+  }
+  .partner-nav:hover {
+    cursor: pointer;
+  }
+  #partners-pre {
+    left: 10vw;
+  }
+  
+  #partners-next {
+    right: 10vw;
+  }
+  /* partner ends */

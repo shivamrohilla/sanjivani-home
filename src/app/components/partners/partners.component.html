@@ -1,0 +1,41 @@
+ <!-- partner starts -->
+ <div class="container-fluid">
+    <div class="row">
+        <div id="partners-tab">
+            <p class="con-sub-heading">SANJIVANI</p>
+            <h2 class="con-heading">Our Partners</h2>
+            <!--<button class="partner-nav" id="partners-pre" onclick="previous_partners()" type="button"><i class="fas fa-angle-left fa-xs" aria-hidden="true"></i></button>
+            <button class="partner-nav" id="partners-next" onclick="next_partners()" type="button"><i class="fas fa-angle-right fa-xs" aria-hidden="true"></i></button>
+            -->
+            <i id="partners-pre" onclick="previous_partners()" class="partner-nav fas fa-angle-left fa-xs"
+                aria-hidden="true"></i>
+            <i id="partners-next" onclick="next_partners()" class="partner-nav fas fa-angle-right fa-xs"
+                aria-hidden="true"></i>
+            <div id="partners-bg" class="partners-bg">
+
+                <div class="partners-content">
+                    <img src="assets/img/partner.png">
+                    <img src="assets/img/partner.png">
+                    <img src="assets/img/partner.png">
+                    <img src="assets/img/partner.png">
+                    <img src="assets/img/partner.png">
+                    <img src="assets/img/partner.png">
+                    <img src="assets/img/partner.png">
+                    <img src="assets/img/partner.png">
+                    <img src="assets/img/partner.png">
+                </div>
+
+            </div>
+        </div>
+        <script>
+            function previous_partners() {
+                document.getElementById('partners-bg').scrollLeft -= 100;
+            }
+
+            function next_partners() {
+                document.getElementById('partners-bg').scrollLeft += 100;
+            }
+        </script>
+    </div>
+</div>
+<!-- partner ends -->

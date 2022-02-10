@@ -1,0 +1,47 @@
+/*Crowdfunding starts*/
+#container-tb {
+    position: relative;
+    width: 100%;
+    background-image: url("../../../assets/img/tax-benifits.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  #tb-row {
+    width: 70vw;
+    margin-left: 15vw;
+    margin-right: 15vw;
+  }
+  
+  .table_tb {
+    width: 100%;
+  }
+  
+  #table-tb > tr > td {
+    text-align: center;
+    color: white;
+    font-family: "Hind", sans-serif;
+  }
+  
+  #data-tb {
+    margin-top: 5vh;
+    margin-bottom: 15vh;
+  }
+  
+  #container-tb > p,
+  h2 {
+    color: white;
+  }
+  
+  @media screen and (max-width: 768px) {
+    #tb-row {
+      width: 100%;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+  }
+  
+  /*Crowdfunding ends*/
+  

@@ -1,0 +1,220 @@
+#what-people {
+    padding-bottom: 3rem;
+  }
+  .blog-card {
+    position: relative;
+    height: 360px;
+    width: 95%;
+    max-width: 850px;
+    margin: auto;
+    border-radius: 25px;
+    background: white;
+    box-shadow: 0px 10px 50px rgba(80, 80, 80, 0.3);
+  }
+  .inner-part {
+    position: absolute;
+    /* border: 10px solid red; */
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 0 25px;
+  }
+  #imgTap:checked ~ .inner-part {
+    padding: 0;
+    transition: 0.1s ease-in;
+  }
+  .inner-part .img {
+    height: 260px;
+    width: 260px;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 2px 3px 15px rgba(252, 56, 56, 0.1);
+  }
+  @media (max-width: 768px) {
+    .inner-part .img {
+      height: 150px;
+      width: 150px;
+    }
+    .blog-card {
+      height: 320px;
+    }
+  }
+  @media (max-width: 500px) {
+    .inner-part .img {
+      height: 100px;
+      width: 100px;
+    }
+  }
+  #imgTap:checked ~ .inner-part .img {
+    height: 370px;
+    width: 850px;
+    z-index: 99;
+    margin-top: 10px;
+    transition: 0.3s 0.2s ease-in;
+  }
+  .img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    opacity: 0;
+    transition: 0.6s;
+  }
+  #tap-1:checked ~ .inner-part .img-1,
+  #tap-2:checked ~ .inner-part .img-2,
+  #tap-3:checked ~ .inner-part .img-3 {
+    opacity: 1;
+    transition-delay: 0.2s;
+  }
+  .content {
+    padding: 0 20px 0 35px;
+    width: 530px;
+    margin-left: 50px;
+    opacity: 0;
+    transition: 0.6s;
+    /* border: 10px solid gold; */
+    width: 100%;
+  }
+  #imgTap:checked ~ .inner-part .content {
+    display: none;
+  }
+  #tap-1:checked ~ .inner-part .content-1,
+  #tap-2:checked ~ .inner-part .content-2,
+  #tap-3:checked ~ .inner-part .content-3 {
+    opacity: 1;
+    margin-left: 0px;
+    z-index: 100;
+    transition-delay: 0.3s;
+  }
+  .content span {
+    display: block;
+    color: #7b7992;
+    margin-bottom: 15px;
+    font-size: 22px;
+    font-weight: 500;
+  }
+  .content .title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #0d0925;
+    margin-bottom: 20px;
+  }
+  .content .text {
+    color: #4e4a67;
+    font-size: 19px;
+    margin-bottom: 30px;
+    line-height: 1.5em;
+    text-align: justify;
+  }
+  
+  .content button {
+    display: inline-flex;
+    padding: 15px 20px;
+    border: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff0e6;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid #0e0d0d;
+    background: linear-gradient(147deg, #080808 0%, #0e0d0d 74%);
+  }
+  .content button:hover {
+    background: linear-gradient(147deg, #050505 0%, #0e0d0d 74%);
+  }
+  
+  .sliders {
+    position: absolute;
+    bottom: 25px;
+    left: 65%;
+    transform: translateX(-50%);
+    z-index: 99;
+  }
+  @media (max-width: 768px) {
+    .content .date {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    .content .title {
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+    .content .text {
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+    .content button {
+      font-size: 12px;
+      padding: 8px 15px;
+    }
+    .sliders {
+      left: 50%;
+    }
+  }
+  @media (max-width: 468px) {
+    .content .date {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+    .content .title {
+      margin-bottom: 5px;
+      font-size: 20px;
+    }
+    .content .text {
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+    .content button {
+      font-size: 12px;
+      padding: 8px 15px;
+    }
+    .sliders {
+      left: 50%;
+    }
+  }
+  #imgTap:checked ~ .sliders {
+    display: none;
+  }
+  .sliders .tap {
+    position: relative;
+    height: 10px;
+    width: 50px;
+    background: #d9d9d9;
+    border-radius: 5px;
+    display: inline-flex;
+    margin: 0 3px;
+    cursor: pointer;
+  }
+  .sliders .tap:hover {
+    background: #cccccc;
+  }
+  .sliders .tap:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: -100%;
+    background: linear-gradient(147deg, #0e0d0d 0%, #0e0d0d 74%);
+    border-radius: 10px;
+    transform: scaleX(0);
+    transition: transform 0.6s;
+    transform-origin: left;
+  }
+  input[type="radio"],
+  input[type="checkbox"] {
+    display: none;
+  }
+  #tap-1:checked ~ .sliders .tap-1:before,
+  #tap-2:checked ~ .sliders .tap-2:before,
+  #tap-3:checked ~ .sliders .tap-3:before {
+    transform: scaleX(1);
+    width: 100%;
+  }
+  /* what people say ends */
+  

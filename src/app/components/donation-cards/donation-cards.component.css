@@ -1,0 +1,139 @@
+/*urgently need starts*/
+#container {
+    width: 100%;
+    margin: 0;
+    padding: 2rem;
+    display: grid;
+    place-items: center;
+    scrollbar-width: none;
+    padding-top: 0;
+    padding-bottom: 2rem;
+  }
+  .donate-card {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  #slider-container {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding: 1rem 0;
+  }
+  
+  #slider-container .btn {
+    position: absolute;
+    top: calc(50% - 30px);
+    height: 30px;
+    width: 30px;
+    border-left: 8px solid rgb(21, 3, 87);
+    border-top: 8px solid rgb(21, 3, 87);
+  }
+  
+  #slider-container .btn:hover {
+    transform: scale(1.2);
+  }
+  
+  #slider-container .btn.inactive {
+    border-color: rgb(153, 121, 126);
+  }
+  
+  #slider-container .btn:first-of-type {
+    transform: rotate(-45deg);
+    left: 10px;
+  }
+  
+  #slider-container .btn:last-of-type {
+    transform: rotate(135deg);
+    right: 10px;
+  }
+  
+  #slider-container #slider {
+    display: flex;
+    gap: 1rem;
+    width: 1000%;
+    height: 100%;
+    transition: all 0.5s;
+    scrollbar-width: none;
+  }
+  
+  #slider-container #slider .slide {
+    height: 90%;
+    margin: auto 2px;
+    box-shadow: 2px 2px 4px 2px white, -2px -2px 4px 2px white;
+    display: grid;
+    place-items: center;
+    -ms-overflow-style: none;
+  }
+  
+  #slider-container #slider .slide span {
+    color: white;
+    font-size: 150px;
+  }
+  
+  @media only screen and (min-width: 1100px) {
+    #slider-container #slider .slide {
+      width: calc(2.5% - 20px);
+    }
+  }
+  
+  @media only screen and (max-width: 1100px) {
+    #slider-container #slider .slide {
+      width: calc(3.3333333% - 20px);
+    }
+  }
+  
+  @media only screen and (max-width: 900px) {
+    #slider-container #slider .slide {
+      width: calc(5% - 20px);
+    }
+  }
+  
+  @media only screen and (max-width: 550px) {
+    #slider-container #slider .slide {
+      width: calc(10% - 20px);
+    }
+  }
+  
+  .box {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .card-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card-part p {
+    color: blue;
+  }
+  
+  .card-button {
+    background-color: rgb(14, 110, 219);
+    color: white;
+    border-radius: 10px;
+    width: 150px;
+    height: 50px;
+  }
+  
+  .card-body h5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card-body p {
+    margin: 5px;
+  }
+  
+  #section {
+    width: 1000px;
+    margin: 0px;
+  }
+  
+  #sec {
+    width: 1000px;
+    margin: 0px;
+  }
+  /*urgently need ends*/
